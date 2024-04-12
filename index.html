@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/index.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>tungrikvip.id.vn</title>
+    <link rel="shortcut icon" href="http://abctech.vn/wp-content/uploads/2017/06/logo-nen-xanh.jpg" type="image/x-icon">
+    <script src="js/index.js"></script>
+</head>
+
+<body onload="loading()">
+    <div onload="loadingone()" class="container">
+        <div class="header">
+            <ul>
+                <li class="header-one">
+                    <i class='bx bx-phone'></i>
+                    <a href="">1900 6756</a>
+                </li>
+                <li class="header-two">
+                    <a href="">Monday-Sunday: 9:00-18:00</a>
+                </li>
+                <li class="header-three">
+                    <a href="signup.html">Sign Up</a>
+                </li>
+                <li class="header-four">
+                    <a href="login.html">Login</a>
+                </li>
+                    <i class='bx bx-search'></i>
+                    <!-- Shopping Cart Button -->
+               <li class="header-cart">
+                <button id="cart-btn" onclick="viewCart()">
+                 <i class='bx bx-cart'></i>
+                  <span id="cart-count">0</span>
+              </button>
+                </li>
+
+                </li>
+            </ul>
+        </div>
+        <div class="nav">
+            <ul>
+                <li>
+                    <a href="index.html">HOME PAGE</a>
+                </li>
+                <li>
+                    <a href="html/sale.html">SALES PRODUCTS</a>
+                </li>
+                
+                <li>
+                    <a class="logo" href="index.html"><img src="images/mitdonald.png" alt=""></a>
+                </li>
+                <li>
+                    <a href="html/tintuc.html">NEWS</a>
+                </li>
+                
+                <li>
+                    <a href="./html/banhang.html">SHOPPING CART</a>
+                </li>
+            </ul>
+        </div>
+        <div class="slider">
+            <div>
+                <img src="images/pizza.png" alt="">
+                <a href="https://pizzahut.vn/order/COMBO">Pizza</a>
+            </div>
+            <div>
+                <img src="images/menu_icon_2.png" alt="">
+                <a href="https://burgerking.vn/">Burger</a>
+            </div>
+            <div>
+                <img src="images/menu_icon_3.png" alt="">
+                <a href="https://www.esquire.com/food-drink/drinks/g215/popular-bar-drinks-0609/">Drinks</a>
+            </div>
+
+        </div>
+
+        <div class="slideshow-container">
+            <div class="fade">
+                <div class="banner"><img id="slidershow" src=""></div>
+                <div class="text">1 / 4</div>
+            </div>
+            <a class="prev" onclick="truoc()">❮</a>
+            <a class="next" onclick="sau()">❯</a>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="bam(1)"></span>
+            <span class="dot" onclick="bam(2)"></span>
+            <span class="dot" onclick="bam(3)"></span>
+            <span class="dot" onclick="bam(4)"></span>
+        </div>
+
+        <div class="aside">
+            
+            </div>
+        </div>
+        <div class="sale">
+            <div class="sale__one">
+
+                <div class="sale__menu__two">
+                    <div class="sale__menu__one">
+                        MENU
+                    </div>
+                    <div class="sale__menu_three">
+                        <a href="">Pizza</a>
+                        <a href="">Burger</a>
+                        <a href="">Drinks</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="sale__two">
+                <p>ON SALE
+                </p>
+                <h2>_______
+                </h2>
+                <div class="sanpham">
+                    <div class="sanpham1">
+                        <p class="sanpham__sale">-6%</p>
+                        <img src="images/sanpham1.png" alt="">
+                        <h3> Chicken thighs fried in butter</h3>
+                        <p style="text-align: center; color:rgb(98, 101, 104) "> Clean, safe food, highly rated among leading brands in... </p>
+                        <h3 style="text-align: center; color:red ">60.000 <sup>đ</sup> <del>64.000<sup>đ</sup></del>
+                        </h3>
+
+                    </div>
+                    <div class="sanpham1">
+                        <img src="images/sanpham2.jpg" alt="">
+                        <h3>Spicy cheese grilled chicken rice</h3>
+                        <p style="text-align: center; color:rgb(98, 101, 104) ">
+                            Are you wondering what to do with the bowl of rice left over from the previous meal? If you throw it away...
+                        </p>
+                        <h3 style="text-align: center; color:red ">65.000 <sup>đ</sup></h3>
+                    </div>
+                    <div class="sanpham1">
+                        <p class="sanpham__sale">-11%</p>
+                        <img src="images/sanpham1.png" alt="">
+                        <h3>Kimchi fried rice</h3>
+                        <p style="text-align: center; color:rgb(98, 101, 104) ">
+                            Are you wondering what to do with the bowl of rice left over from the previous meal? If you throw it away...
+                        </p>
+                        <h3 style="text-align: center; color:red ">250.000 <sup>đ</sup> <del>280.000<sup>đ</sup></del>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chicken">
+            <div class="div">
+                <p class="chicken_sale">ON SALE
+                </p>
+                <h2>_______
+                </h2>
+            </div>
+            <div class="sanpham2">
+                <div class="sanpham3">
+                    <p class="sanpham__sale">-13%</p>
+                    <img src="images/sanpham4.jpg" alt="">
+                    <h3>Chicken thighs fried in butter</h3>
+                    <p style="text-align: center; color:rgb(98, 101, 104) "> Clean, safe food, highly rated among leading brands in... </p>
+                    <h3 style="text-align: center; color:red ">65.000 <sup>đ</sup> <del>75.000<sup>đ</sup></del></h3>
+
+                </div>
+            </div>
+            <div class="sanpham2">
+                <div class="sanpham3">
+                    <p class="sanpham__sale">-20%</p>
+                    <img src="images/sanpham5.jpg" alt="">
+                    <h3>Chicken thighs fried in butter</h3>
+                    <p style="text-align: center; color:rgb(98, 101, 104) "> Clean, safe food, highly rated among leading brands in... </p>
+                    <h3 style="text-align: center; color:red ">120.000 <sup>đ</sup> <del>150.000<sup>đ</sup></del></h3>
+
+                </div>
+            </div>
+            <div class="sanpham2">
+                <div class="sanpham3">
+
+                    <img src="images/sanpham6.jpg" alt="">
+                    <h3>Chicken thighs fried in butter</h3>
+                    <p style="text-align: center; color:rgb(98, 101, 104) "> Clean, safe food, highly rated among leading brands in... </p>
+                    <h3 style="text-align: center; color:red ">65.000 <sup>đ</sup> </h3>
+
+                </div>
+            </div>
+            <div class="sanpham2">
+                <div class="sanpham3">
+                    <p class="sanpham__sale">-20%</p>
+                    <img src="images/sanpham7.jpg" alt="">
+                    <h3>Chicken thighs fried in butter</h3>
+                    <p style="text-align: center; color:rgb(98, 101, 104) "> Clean, safe food, highly rated among leading brands in... </p>
+                    <p style="text-align: center; color:red;  ">120.000 <sup>đ</sup> <del>150.000<sup>đ</sup></del></p>
+
+                </div>
+            </div>
+        </div>
+        <div class="chicken">
+            <div class="div">
+                <p class="chicken_sale">Fried rice
+                </p>
+                <h2>_______
+                </h2>
+            </div>
+            <div class="sanpham2">
+                <div class="sanpham3">
+                    <p class="sanpham__sale">-13%</p>
+                    <img src="images/sanpham4.jpg" alt="">
+                    <h3>Chicken thighs fried in butter</h3>
+                    <p style="text-align: center; color:rgb(98, 101, 104) "> Clean, safe food, highly rated among leading brands in... </p>
+                    <h3 style="text-align: center; color:red ">65.000 <sup>đ</sup> <del>75.000<sup>đ</sup></del></h3>
+                </div>
+            </div>
+            <div class="sanpham2">
+                <div class="sanpham3">
+                    <p class="sanpham__sale">-20%</p>
+                    <img src="images/sanpham5.jpg" alt="">
+                    <h3>Chicken thighs fried in butter</h3>
+                    <p style="text-align: center; color:rgb(98, 101, 104) "> Clean, safe food, highly rated among leading brands in... </p>
+                    <h3 style="text-align: center; color:red ">120.000 <sup>đ</sup> <del>150.000<sup>đ</sup></del></h3>
+
+                </div>
+            </div>
+            <div class="sanpham2">
+                <div class="sanpham3">
+                    <img src="images/sanpham6.jpg" alt="">
+                    <h3>Chicken thighs fried in butter</h3>
+                    <p style="text-align: center; color:rgb(98, 101, 104) "> Clean, safe food, highly rated among leading brands in... </p>
+                    <h3 style="text-align: center; color:red ">65.000 <sup>đ</sup> </h3>
+                </div>
+            </div>
+            <div class="sanpham2">
+                <div class="sanpham3">
+                    <p class="sanpham__sale">-20%</p>
+                    <img src="images/sanpham7.jpg" alt="">
+                    <h3>Chicken thighs fried in butter</h3>
+                    <p style="text-align: center; color:rgb(98, 101, 104) "> Clean, safe food, highly rated among leading brands in...</p>
+                    <p style="text-align: center; color:red;  ">120.000 <sup>đ</sup> <del>150.000<sup>đ</sup></del></p>
+
+                </div>
+            </div>
+        </div>
+        <div class="chicken">
+            <div class="div">
+                <p class="chicken_sale">Fried chicken
+                </p>
+                <h2>_______
+                </h2>
+            </div>
+            <div class="sanpham2">
+                <div class="sanpham3">
+                    <p class="sanpham__sale">-13%</p>
+                    <img src="images/sanpham4.jpg" alt="">
+                    <h3>Chicken thighs fried in butter</h3>
+                    <p style="text-align: center; color:rgb(98, 101, 104) ">Clean, safe food, highly rated among leading brands in...</p>
+                    <h3 style="text-align: center; color:red ">65.000 <sup>đ</sup> <del>75.000<sup>đ</sup></del></h3>
+                    
+
+                </div>
+            </div>
+            <div class="sanpham2">
+                <div class="sanpham3">
+                    <p class="sanpham__sale">-20%</p>
+                    <img src="images/sanpham5.jpg" alt="">
+                    <h3>Chicken thighs fried in butter</h3>
+                    <p style="text-align: center; color:rgb(98, 101, 104) "> Clean, safe food, highly rated among leading brands in...</p>
+                    <h3 style="text-align: center; color:red ">120.000 <sup>đ</sup> <del>150.000<sup>đ</sup></del></h3>
+
+                </div>
+            </div>
+            <div class="sanpham2">
+                <div class="sanpham3">
+
+                    <img src="images/sanpham6.jpg" alt="">
+                    <h3>Chicken thighs fried in butter</h3>
+                    <p style="text-align: center; color:rgb(98, 101, 104) "> Clean, safe food, highly rated among leading brands in...</p>
+                    <h3 style="text-align: center; color:red ">65.000 <sup>đ</sup> </h3>
+
+                </div>
+            </div>
+            <div class="sanpham2">
+                <div class="sanpham3">
+                    <p class="sanpham__sale">-20%</p>
+                    <img src="images/sanpham7.jpg" alt="">
+                    <h3>Chicken thighs fried in butter</h3>
+                    <p style="text-align: center; color:rgb(98, 101, 104) "> Clean, safe food, highly rated among leading brands in... </p>
+                    <p style="text-align: center; color:red;  ">120.000 <sup>đ</sup> <del>150.000<sup>đ</sup></del></p>
+
+                </div>
+            </div>
+        </div>
+        <div class="chicken">
+            <div class="div">
+                <p class="chicken_sale">Mixed rice
+                </p>
+                <h2>_______
+                </h2>
+            </div>
+            <div class="sanpham2">
+                <div class="sanpham3">
+                    <p class="sanpham__sale">-13%</p>
+                    <img src="images/sanpham4.jpg" alt="">
+                    <h3>Chicken thighs fried in butter</h3>
+                    <p style="text-align: center; color:rgb(98, 101, 104) "> Clean, safe food, highly rated among leading brands in...</p>
+                    <h3 style="text-align: center; color:red ">65.000 <sup>đ</sup> <del>75.000<sup>đ</sup></del></h3>
+
+                </div>
+            </div>
+            <div class="sanpham2">
+                <div class="sanpham3">
+                    <p class="sanpham__sale">-20%</p>
+                    <img src="images/sanpham5.jpg" alt="">
+                    <h3>Chicken thighs fried in butter</h3>
+                    <p style="text-align: center; color:rgb(98, 101, 104) "> Clean, safe food, highly rated among leading brands in... </p>
+                    <h3 style="text-align: center; color:red ">120.000 <sup>đ</sup> <del>150.000<sup>đ</sup></del></h3>
+
+                </div>
+            </div>
+            <div class="sanpham2">
+                <div class="sanpham3">
+                    <img src="images/sanpham6.jpg" alt="">
+                    <h3>Chicken thighs fried in butter</h3>
+                    <p style="text-align: center; color:rgb(98, 101, 104) "> Clean, safe food, highly rated among leading brands in...</p>
+                    <h3 style="text-align: center; color:red ">65.000 <sup>đ</sup> </h3>
+
+                </div>
+            </div>
+            <div class="sanpham2">
+                <div class="sanpham3">
+                    <p class="sanpham__sale">-20%</p>
+                    <img src="images/sanpham7.jpg" alt="">
+                    <h3>Chicken thighs fried in butter</h3>
+                    <p style="text-align: center; color:rgb(98, 101, 104) "> Clean, safe food, highly rated among leading brands in...</p>
+                    <p style="text-align: center; color:red;  ">120.000 <sup>đ</sup> <del>150.000<sup>đ</sup></del></p>
+                </div>
+            </div>
+        </div>
+        <div class="image">
+            <img src="images/image1.jpg" alt="">
+            <img src="images/image2.jpg" alt="">
+            <img src="images/image3.jpg" alt="">
+            <img src="images/image4.jpg" alt="">
+            <img src="images/image5.jpg" alt="">
+            <img src="images/image6.jpg" alt="">
+        </div>
+
+
+
+    <div class="footter">
+        <div class="box-container">
+            <div class="box">
+                <h3>QUICK LINKS</h3>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Products</a>
+                <a href="#">Review</a>
+                <a href="#">Contacts</a>
+            </div>
+            <div class="box">
+                <h3>EXTRA LINKS</h3>
+                <a href="#">my account</a>
+                <a href="#">my order</a>
+                <a href="#">my favorite</a>
+            </div>
+            <div class="box">
+                <h3>LOCATIONS</h3>
+                <a href="#">India</a>
+                <a href="#">USA</a>
+                <a href="#">Japan</a>
+                <a href="#">France</a>
+            </div>
+            <div class="box">
+                <h3>CONTACT INFO</h3>
+                <a href="#">+03-836-290-03</a>
+                <a href="#">tungndbh01085@fpt.edu.vn</a>
+                <a href="#">Mumbai, India - 400104</a>
+                <img src="images/thanhtoan11.png" alt="">
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

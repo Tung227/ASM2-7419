@@ -1,0 +1,21 @@
+.banner__meat {
+    color: white;
+    background: url("../images/bannerthit0.png") no-repeat center/100% 100%;
+    width: 100%;
+    height: 250px;
+    text-align: center;
+    padding-top: 75px;
+    box-sizing: border-box;
+}
+
+.sanpham {
+    display: flex;
+    justify-content: center;
+}
+
+.sanpham>.sanpham1 {
+    box-shadow: 0 0 1px black;
+}
+.prev,.next {
+top: 500px;
+}
